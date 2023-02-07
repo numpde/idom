@@ -89,17 +89,16 @@ This documentation is broken up into chapters and sections that introduce you to
 concepts step by step with detailed explanations and lots of examples. You should feel
 free to dive into any content that seems interesting. While each chapter assumes
 knowledge from those that came before, when you encounter a concept you're unfamiliar
-with you should look for links that will help direct you to the place where it was
-originally taught.
+with you should look for links that will direct you to the place where it was introduced.
 
 
 Chapter 1 - :ref:`Getting Started`
 -----------------------------------
 
-If you want to follow along with examples in the sections that follow, you'll want to
+If you want to follow along with code examples, you'll want to
 start here so you can :ref:`install IDOM <Installing IDOM>`. This section also contains
 more detailed information about how to :ref:`run IDOM <Running IDOM>` in different
-contexts. For example, if you want to embed IDOM into an existing application, or run
+contexts. For example, if you want to embed IDOM into an existing application or run
 IDOM within a Jupyter Notebook, this is where you can learn how to do those things.
 
 .. grid:: 1 2 2 2
@@ -127,9 +126,9 @@ Chapter 2 - :ref:`Creating Interfaces`
 --------------------------------------
 
 IDOM is a Python package for making user interfaces (UI). These interfaces are built
-from small elements of functionality like buttons text and images. IDOM allows you to
-combine these elements into reusable :ref:`"components" <your first components>`. In the
-sections that follow you'll learn how these UI elements are created and organized into
+from small elements of functionality like buttons, text and images. IDOM allows you to
+combine these elements into reusable :ref:`"components" <your first components>`.
+Here you'll learn how these UI elements are created and organized into
 components. Then, you'll use this knowledge to create interfaces from raw data:
 
 .. idom:: guides/creating-interfaces/rendering-data/_examples/todo_list_with_keys
@@ -151,9 +150,9 @@ Components often need to change what’s on the screen as a result of an interac
 example, typing into the form should update the input field, clicking a “Comment” button
 should bring up a text input field, clicking “Buy” should put a product in the shopping
 cart. Components need to “remember” things like the current input value, the current
-image, the shopping cart. In IDOM, this kind of component-specific memory is created and
-updated with a "hook" called ``use_state()`` that creates a **state variable** and
-**state setter** respectively:
+image, the shopping cart, etc. In IDOM, this component-specific memory is created and
+updated with a "hook" called ``use_state`` that creates a **state variable** and
+a **state setter**:
 
 .. idom:: guides/adding-interactivity/components-with-state/_examples/adding_state_variable
 
@@ -161,7 +160,7 @@ In IDOM, ``use_state``, as well as any other function whose name starts with ``u
 called a "hook". These are special functions that should only be called while IDOM is
 :ref:`rendering <the rendering process>`. They let you "hook into" the different
 capabilities of IDOM's components of which ``use_state`` is just one (well get into the
-other :ref:`later <managing state>`).
+others :ref:`later <managing state>`).
 
 .. card::
     :link: guides/adding-interactivity/index
