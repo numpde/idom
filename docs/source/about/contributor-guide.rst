@@ -110,7 +110,7 @@ Then, you should be able to run the command below to:
 
 - Install an editable version of the Python code
 
-- Download, build, and install Javascript dependencies
+- Download, build, and install JavaScript dependencies
 
 - Install some pre-commit_ hooks for Git
 
@@ -118,7 +118,7 @@ Then, you should be able to run the command below to:
 
     pip install -e . -r requirements.txt && pre-commit install
 
-If you modify any Javascript, you'll need to re-install IDOM:
+If you modify any JavaScript, you'll need to re-install IDOM:
 
 .. code-block:: bash
 
@@ -138,7 +138,7 @@ followed the `earlier instructions <Development Environment>`_. The suite covers
 
 2. The end-to-end application using Playwright_ in Python
 
-3. Client-side Javascript code with UVU_
+3. Client-side JavaScript code with UVU_
 
 Before running the test suite you'll need to install the required browsers by running:
 
@@ -290,7 +290,7 @@ To **tag a version** you'll run the following command:
 Which will update the version for:
 
 - Python packages
-- Javascript packages
+- JavaScript packages
 - The changelog
 
 You'll be then prompted to confirm the auto-generated updates before those changes will
@@ -313,7 +313,7 @@ you should refer to their respective documentation in the links below:
 
 - `idom-react-component-cookiecutter
   <https://github.com/idom-team/idom-react-component-cookiecutter>`__ - Template repo
-  for making :ref:`Custom Javascript Components`.
+  for making :ref:`Custom JavaScript Components`.
 - `flake8-idom-hooks <https://github.com/idom-team/flake8-idom-hooks>`__ - Enforces the
   :ref:`Rules of Hooks`
 - `idom-jupyter <https://github.com/idom-team/idom-jupyter>`__ - IDOM integration for

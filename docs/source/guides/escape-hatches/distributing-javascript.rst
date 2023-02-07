@@ -1,32 +1,32 @@
-Distributing Javascript
+Distributing JavaScript
 =======================
 
-There are two ways that you can distribute your :ref:`Custom Javascript Components`:
+There are two ways that you can distribute your :ref:`Custom JavaScript Components`:
 
 - Using a CDN_
 - In a Python package via PyPI_
 
 These options are not mutually exclusive though, and it may be beneficial to support
-both options. For example, if you upload your Javascript components to NPM_ and also
-bundle your Javascript inside a Python package, in principle your users can determine
+both options. For example, if you upload your JavaScript components to NPM_ and also
+bundle your JavaScript inside a Python package, in principle your users can determine
 which work best for them. Regardless though, either you or, if you give then the choice,
 your users, will have to consider the tradeoffs of either approach.
 
-- :ref:`Distributing Javascript via CDN_` - Most useful in production-grade applications
+- :ref:`Distributing JavaScript via CDN_` - Most useful in production-grade applications
   where its assumed the user has a network connection. In this scenario a CDN's `edge
   network <https://en.wikipedia.org/wiki/Edge_computing>`__ can be used to bring the
-  Javascript source closer to the user in order to reduce page load times.
+  JavaScript source closer to the user in order to reduce page load times.
 
-- :ref:`Distributing Javascript via PyPI_` - This method is ideal for local usage since
-  the user can server all the Javascript components they depend on from their computer
+- :ref:`Distributing JavaScript via PyPI_` - This method is ideal for local usage since
+  the user can server all the JavaScript components they depend on from their computer
   without requiring a network connection.
 
 
-Distributing Javascript via CDN_
+Distributing JavaScript via CDN_
 --------------------------------
 
 Under this approach, to simplify these instructions, we're going to ignore the problem
-of distributing the Javascript since that must be handled by your CDN. For open source
+of distributing the JavaScript since that must be handled by your CDN. For open source
 or personal projects, a CDN like https://unpkg.com/ makes things easy by automatically
 preparing any package that's been uploaded to NPM_. If you need to roll with your own
 private CDN, this will likely be more complicated.
@@ -43,22 +43,22 @@ where you can then load any of its exports:
     YourComponent = idom.web.export(your_module, "YourComponent")
 
 
-Distributing Javascript via PyPI_
+Distributing JavaScript via PyPI_
 ---------------------------------
 
 This can be most easily accomplished by using the `template repository`_ that's been
 purpose-built for this. However, to get a better sense for its inner workings, we'll
 briefly look at what's required. At a high level, we must consider how to...
 
-1. bundle your Javascript into an `ECMAScript Module`)
-2. include that Javascript bundle in a Python package
+1. bundle your JavaScript into an `ECMAScript Module`)
+2. include that JavaScript bundle in a Python package
 3. use it as a component in your application using IDOM
 
 In the descriptions to follow we'll be assuming that:
 
-- NPM_ is the Javascript package manager
+- NPM_ is the JavaScript package manager
 - The components are implemented with React_
-- Rollup_ bundles the Javascript module
+- Rollup_ bundles the JavaScript module
 - Setuptools_ builds the Python package
 
 To start, let's take a look at the file structure we'll be building:
@@ -135,7 +135,7 @@ we'll be writing ``widget.py`` under that assumption.
 
     Don't forget to ignore this ``bundle.js`` file when committing code (with a
     ``.gitignore`` if you're using Git) since it can always rebuild from the raw
-    Javascript source in ``your-project/js``.
+    JavaScript source in ``your-project/js``.
 
 .. code-block:: javascript
 
@@ -203,7 +203,7 @@ we need to declare what our build tool is (in this case Setuptools):
 
 Then, we can creat the ``setup.py`` file which uses Setuptools. This will differ
 substantially from a normal ``setup.py`` file since, as part of the build process we'll
-need to use NPM to bundle our Javascript. This requires customizing some of the build
+need to use NPM to bundle our JavaScript. This requires customizing some of the build
 commands in Setuptools like ``build``, ``sdist``, and ``develop``:
 
 .. code-block:: python
@@ -242,7 +242,7 @@ commands in Setuptools like ``build``, ``sdist``, and ``develop``:
 
 
     # ----------------------------------------------------------------------------
-    # Build Javascript
+    # Build JavaScript
     # ----------------------------------------------------------------------------
 
 

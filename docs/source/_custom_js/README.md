@@ -1,4 +1,4 @@
-# Custom Javascript for IDOM's Docs
+# Custom JavaScript for IDOM's Docs
 
 Build the javascript with
 

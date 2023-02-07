@@ -167,7 +167,7 @@ To learn more read about the options for your chosen backend ``<implementation>`
 Embed in an Existing Webpage
 ----------------------------
 
-IDOM provides a Javascript client called ``idom-client-react`` that can be used to embed
+IDOM provides a JavaScript client called ``idom-client-react`` that can be used to embed
 IDOM views within an existing applications. This is actually how the interactive
 examples throughout this documentation have been created. You can try this out by
 embedding one the examples from this documentation into your own webpage:
@@ -186,7 +186,7 @@ embedding one the examples from this documentation into your own webpage:
 
 .. note::
 
-    For more information on how to use the client see the :ref:`Javascript API`
+    For more information on how to use the client see the :ref:`JavaScript API`
     reference. Or if you need to, your can :ref:`write your own backend implementation
     <writing your own backend>`.
 
@@ -218,4 +218,3 @@ After running ``python main.py``, you should be able to navigate to
 
     .. image:: _static/embed-idom-view/screenshot.png
         :width: 500px
-

@@ -1,6 +1,6 @@
-.. _Javascript Component:
+.. _JavaScript Component:
 
-Javascript Components
+JavaScript Components
 =====================
 
 While IDOM is a great tool for displaying HTML and responding to browser events with
@@ -9,7 +9,7 @@ pure Python, there are other projects which already allow you to do this inside
 or in standard
 `web apps <https://blog.jupyter.org/and-voil%C3%A0-f6a2c08a4a93?gi=54b835a2fcce>`__.
 The real power of IDOM comes from its ability to seamlessly leverage the existing
-Javascript ecosystem. This can be accomplished in different ways for different reasons:
+JavaScript ecosystem. This can be accomplished in different ways for different reasons:
 
 .. list-table::
     :header-rows: 1
@@ -18,9 +18,9 @@ Javascript ecosystem. This can be accomplished in different ways for different r
         - Use Case
 
     *   - :ref:`Dynamically Loaded Components`
-        - You want to **quickly experiment** with IDOM and the Javascript ecosystem.
+        - You want to **quickly experiment** with IDOM and the JavaScript ecosystem.
 
-    *   - :ref:`Custom Javascript Components`
+    *   - :ref:`Custom JavaScript Components`
         - You want to create polished software that can be **easily shared** with others.
 
 
@@ -32,11 +32,11 @@ Dynamically Loaded Components
 .. note::
 
     This method is not recommended in production systems - see :ref:`Distributing
-    Javascript` for more info. Instead, it's best used during exploratory phases of
+    JavaScript` for more info. Instead, it's best used during exploratory phases of
     development.
 
 IDOM makes it easy to draft your code when you're in the early stages of development by
-using a CDN_ to dynamically load Javascript packages on the fly. In this example we'll
+using a CDN_ to dynamically load JavaScript packages on the fly. In this example we'll
 be using the ubiquitous React-based UI framework `Material UI`_.
 
 .. idom:: _examples/material_ui_button_no_action
@@ -49,16 +49,16 @@ we need to do is add an ``onClick`` handler to the component:
 .. idom:: _examples/material_ui_button_on_click
 
 
-.. _Custom Javascript Component:
+.. _Custom JavaScript Component:
 
-Custom Javascript Components
+Custom JavaScript Components
 ----------------------------
 
-For projects that will be shared with others, we recommend bundling your Javascript with
+For projects that will be shared with others, we recommend bundling your JavaScript with
 Rollup_ or Webpack_ into a `web module`_. IDOM also provides a `template repository`_
 that can be used as a blueprint to build a library of React components.
 
-To work as intended, the Javascript bundle must export a function ``bind()`` that
+To work as intended, the JavaScript bundle must export a function ``bind()`` that
 adheres to the following interface:
 
 .. code-block:: typescript
@@ -126,11 +126,11 @@ It will be used in the following manner:
     binding.unmount();
 
 The simplest way to try this out yourself though, is to hook in a simple hand-crafted
-Javascript module that has the requisite interface. In the example to follow we'll
+JavaScript module that has the requisite interface. In the example to follow we'll
 create a very basic SVG line chart. The catch though is that we are limited to using
-Javascript that can run directly in the browser. This means we can't use fancy syntax
+JavaScript that can run directly in the browser. This means we can't use fancy syntax
 like `JSX <https://reactjs.org/docs/introducing-jsx.html>`__ and instead will use
-`htm <https://github.com/developit/htm>`__ to simulate JSX in plain Javascript.
+`htm <https://github.com/developit/htm>`__ to simulate JSX in plain JavaScript.
 
 .. idom:: _examples/super_simple_chart
 

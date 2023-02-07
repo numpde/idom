@@ -1,6 +1,6 @@
-.. _Javascript API:
+.. _JavaScript API:
 
-Javascript API 🚧
+JavaScript API 🚧
 =================
 
 .. note::

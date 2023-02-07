@@ -40,7 +40,7 @@ What is IDOM?
 
 
 IDOM is a Python web framework for building **interactive websites without needing a
-single line of Javascript**. This is accomplished by breaking down complex applications
+single line of JavaScript**. This is accomplished by breaking down complex applications
 into nestable and reusable chunks of code called :ref:`"components" <Your First
 Components>` that allow you to focus on what your application does rather than how it
 does it.
@@ -211,4 +211,3 @@ Chapter 6 - :ref:`Understanding IDOM`
     ^^^^^^^^^^^^^^^^^^^^^^^^^
 
     Under construction 🚧
-

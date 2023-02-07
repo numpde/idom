@@ -651,7 +651,7 @@ v0.33.3
 Contains a small number of bug fixes and improvements. The most significant change is
 the addition of a warning stating that `IDOM_FEATURE_INDEX_AS_DEFAULT_KEY=1` will become
 the default in a future release. Beyond that, a lesser improvement makes it possible to
-use the default export from a Javascript module when calling `module_from_template` by
+use the default export from a JavaScript module when calling `module_from_template` by
 specifying `exports_default=True` as a parameter. A
 
 **Closed Issues**
@@ -700,10 +700,10 @@ v0.33.0
 The most significant fix in this release is for a regression which manifested in
 :issue:`480`, :issue:`489`, and :issue:`451` which resulted from an issue in the way
 JSON patches were being applied client-side. This was ultimately resolved by
-:pull:`490`. While it's difficult to test this without a more thorough Javascript
+:pull:`490`. While it's difficult to test this without a more thorough JavaScript
 suite, we added a test that should hopefully catch this in the future by proxy.
 
-The most important breaking change, is yet another which modifies the Custom Javascript
+The most important breaking change, is yet another which modifies the Custom JavaScript
 Component interface. We now add a ``create()`` function to the ``bind()`` interface that
 allows IDOM's client to recursively create components from that (and only that) import
 source. Prior to this, the interface was given unrendered models for child elements. The
@@ -913,7 +913,7 @@ Includes a wide variety of improvements:
 
 - support ``currentTime`` attr of audio/video elements
 - support for the ``files`` attribute from the target of input elements
-- model children are passed to the Javascript ``mount()`` function
+- model children are passed to the JavaScript ``mount()`` function
 - began to add tests to client-side javascript
 - add a ``mountLayoutWithWebSocket`` function to ``idom-client-react``
 
@@ -922,7 +922,7 @@ and breaking changes, the most significant of which are:
 - Refactor existing server implementations as functions adhering to a protocol. This
   greatly simplified much of the code responsible for setting up servers and avoids
   the use of inheritance.
-- Switch to a monorepo-style structure for Javascript enabling a greater separation of
+- Switch to a monorepo-style structure for JavaScript enabling a greater separation of
   concerns and common workspace scripts in ``package.json``.
 - Use a ``loadImportSource()`` function instead of trying to infer the path to dynamic
   modules which was brittle and inflexible. Allowing the specific client implementation
@@ -964,7 +964,7 @@ v0.27.0
 -------
 :octicon:`milestone` *released on 2021-05-14*
 
-Introduces changes to the interface for custom Javascript components. This now allows
+Introduces changes to the interface for custom JavaScript components. This now allows
 JS modules to export a ``mount(element, component, props)`` function which can be used
 to bind new elements to the DOM instead of using the application's own React instance
 and specifying React as a peer dependency. This avoids a wide variety of potential

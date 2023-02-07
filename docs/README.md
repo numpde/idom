@@ -14,5 +14,5 @@ being run from the root of the repository:
 - `sphinx-build -b html docs/source docs/build`
 - `python scripts/run_docs.py`
 
-The first command constructs the static HTML and any Javascript. The latter actually
+The first command constructs the static HTML and any JavaScript. The latter actually
 runs the web server that serves the content.

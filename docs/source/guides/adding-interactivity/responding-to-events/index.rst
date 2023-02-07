@@ -114,7 +114,7 @@ Client-side Event Behavior
 Because IDOM operates server-side, there are inevitable limitations that prevent it from
 achieving perfect parity with all the behaviors of React. With that said, any feature
 that cannot be achieved in Python with IDOM, can be done by creating
-:ref:`Custom Javascript Components`.
+:ref:`Custom JavaScript Components`.
 
 
 Preventing Default Event Actions
@@ -128,7 +128,7 @@ example, we can stop a link from going to the specified URL:
 .. idom:: _examples/prevent_default_event_actions
 
 Unfortunately this means you cannot conditionally prevent default behavior in response
-to event data without writing :ref:`Custom Javascript Components`.
+to event data without writing :ref:`Custom JavaScript Components`.
 
 
 Stop Event Propogation

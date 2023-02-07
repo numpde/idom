@@ -29,7 +29,7 @@ project = "IDOM"
 title = "IDOM Docs"
 description = (
     "IDOM is a Python web framework for building interactive websites without needing "
-    "a single line of Javascript. It can be run standalone, in a Jupyter Notebook, or "
+    "a single line of JavaScript. It can be run standalone, in a Jupyter Notebook, or "
     "as part of an existing application."
 )
 copyright = "2020, Ryan Morshead"
